@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/daily-dose-news-app/static/css/main.abd64e84.css",
-    "main.js": "/daily-dose-news-app/static/js/main.5fd72133.js",
+    "main.js": "/daily-dose-news-app/static/js/main.651938e6.js",
     "static/js/787.83c3ab16.chunk.js": "/daily-dose-news-app/static/js/787.83c3ab16.chunk.js",
     "index.html": "/daily-dose-news-app/index.html",
     "main.abd64e84.css.map": "/daily-dose-news-app/static/css/main.abd64e84.css.map",
-    "main.5fd72133.js.map": "/daily-dose-news-app/static/js/main.5fd72133.js.map",
+    "main.651938e6.js.map": "/daily-dose-news-app/static/js/main.651938e6.js.map",
     "787.83c3ab16.chunk.js.map": "/daily-dose-news-app/static/js/787.83c3ab16.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.5fd72133.js"
+    "static/js/main.651938e6.js"
   ]
 }
