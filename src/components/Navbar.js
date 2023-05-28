@@ -7,9 +7,18 @@ const Navbar = (props) => {
     let location = useLocation();
     React.useEffect(() => {
     }, [location]);
+
+    const handleSelect = () => {
+        // document.querySelector('.navbar-collapse').classList.remove('show');
+
+        const navbarCollapse = document.querySelector('.navbar-collapse');
+        if (navbarCollapse) {
+            navbarCollapse.classList.remove('show');
+        }
+    }
     return (
         <div>
-            <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+            <nav className={`navbar fixed-top navbar-expand-lg navbar-${props.mode} bg-${props.mode}`} onSelect={handleSelect()}>
                 <div className="container-fluid">
                     <Link className={`navbar-brand`} to="/">Daily Dose</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
