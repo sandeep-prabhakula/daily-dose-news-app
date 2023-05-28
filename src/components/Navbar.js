@@ -18,12 +18,12 @@ const Navbar = (props) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/'?'active':''}`} to="/">Home</Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/business'?'active':''}`} to="/dailydose/business">Business</Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/entertainment'?'active':''}`} to="/dailydose/entertainment">Entertainment</Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/politics'?'active':''}`} to="/dailydose/politics">Politics</Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/science'?'active':''}`} to="/dailydose/science">Science</Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/sports'?'active':''}`} to="/dailydose/sports">Sports </Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/dailydose/technology'?'active':''}`} to="/dailydose/technology">Technology</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/business'?'active':''}`} to="/dailydose/business">Business</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/entertainment'?'active':''}`} to="/dailydose/entertainment">Entertainment</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/politics'?'active':''}`} to="/dailydose/politics">Politics</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/science'?'active':''}`} to="/dailydose/science">Science</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/sports'?'active':''}`} to="/dailydose/sports">Sports </Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/technology'?'active':''}`} to="/dailydose/technology">Technology</Link></li>
                         </ul>
                         <DarkSwitch mode={props.mode} toggleMode={props.toggleMode} />
                     </div>
