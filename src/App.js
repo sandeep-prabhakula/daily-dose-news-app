@@ -9,7 +9,6 @@ import {
   Route
 } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar'
-import DetailedArticle from './components/DetailedArticle';
 
 const App = () => {
   let pageSize = 6
