@@ -7,7 +7,7 @@ const DarkSwitch = (props)=> {
                     <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" onClick={props.toggleMode}/>
                         <label className="form-check-label" htmlFor="flexSwitchCheckDefault" style={{
                             color:props.mode==='light'?'#000':'#fff'
-                        }}>Enable {props.mode==='light'?'dark':'light'} mode</label>
+                        }}>{props.mode==='light'?'dark':'light'} mode</label>
                 </div>
             </div>
         )

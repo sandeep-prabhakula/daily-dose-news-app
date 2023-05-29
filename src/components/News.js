@@ -14,9 +14,11 @@ const News = (props) => {
     const updateNews = async () => {
         props.setProgress(10)
         const url = `https://inshorts.deta.dev/news?category=${props.category}`
+        console.log(props.category)
         let data = await fetch(url)
         props.setProgress(50)
         let parseData = await data.json()
+        console.log(parseData)
         props.setProgress(70)
         setArticles(parseData.data)
         props.setProgress(100)
@@ -34,7 +36,7 @@ const News = (props) => {
             color: props.mode === 'light' ? '#000' : '#fff'
         }}>
             <h1 className='text-center' style={{
-                marginTop: '50px'
+                marginTop: '55px'
             }}>Daily Dose - Top {capitalizeFirstLetter(props.category)} Headlines</h1>
             <div className='container'>
                 <div className="row">

@@ -27,12 +27,19 @@ const Navbar = (props) => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/'?'active':''}`} to="/">Home</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/world'?'active':''}`} to="/world">World</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/india'?'active':''}`} to="/india">India</Link></li>
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/business'?'active':''}`} to="/business">Business</Link></li>
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/entertainment'?'active':''}`} to="/entertainment">Entertainment</Link></li>
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/politics'?'active':''}`} to="/politics">Politics</Link></li>
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/science'?'active':''}`} to="/science">Science</Link></li>
                             <li className="nav-item"><Link className={`nav-link ${location.pathname==='/sports'?'active':''}`} to="/sports">Sports </Link></li>
-                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/technology'?'active':''}`} to="/technology">Technology</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/technology'?'active':''}`} to="/technology">Technology</Link></li>                            
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/automobile'?'active':''}`} to="/automobile">Automobiles</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/startup'?'active':''}`} to="/startup">Startup</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/hatke'?'active':''}`} to="/hatke">Hatke</Link></li>
+                            <li className="nav-item"><Link className={`nav-link ${location.pathname==='/misc'?'active':''}`} to="/misc">Miscellaneous</Link></li>
+
                         </ul>
                         <DarkSwitch mode={props.mode} toggleMode={props.toggleMode} />
                     </div>
