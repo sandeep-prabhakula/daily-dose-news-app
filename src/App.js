@@ -9,6 +9,7 @@ import {
   Route
 } from 'react-router-dom';
 import LoadingBar from 'react-top-loading-bar'
+import Footer from './components/Footer';
 
 const App = () => {
   const [progress, setProgress] = useState(0)
@@ -47,6 +48,7 @@ const App = () => {
           <Route exact path='/hatke' element={<News setProgress={changeProgress} key='hatke' category='hatke' mode = {mode}/>} />
           <Route exact path='/misc' element={<News setProgress={changeProgress} key='miscellaneous' category='miscellaneous' mode = {mode}/>} />
         </Routes>
+        <Footer/>
       </Router>
     </div>
   )

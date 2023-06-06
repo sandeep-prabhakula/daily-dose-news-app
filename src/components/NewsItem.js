@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 
 const NewsItem = (props) => {
 
@@ -16,9 +15,10 @@ const NewsItem = (props) => {
                 </span>
                 <img src={props.imageURL} className="card-img-top" alt="..." />
                 <div className="card-body">
-                    <h5 className="card-title">{props.title}</h5>
+                    <h5 className="card-title text-truncate">{props.title}</h5>
                     <p className="card-text text-truncate">{props.description}</p>
                     <p><strong>PublishedAt :</strong> {props.date}</p>
+                    <p><strong>Time :</strong> {props.time}</p>
                     <p><strong>Author :</strong> {props.author}</p>
                     <a href={props.videoURL} target="_blank" rel="noopener noreferrer"></a>
                     <a className='btn btn-primary' href={`${props.newsURL}`}>Read more</a>
